@@ -31,10 +31,11 @@ try:
         while not line2:
             line2 = ser.readline().decode().strip()
 
-        if line1 and line2:
+        if line1 and line2 :
+
             try:
                 # SELECT-Abfrage ausführen
-                cursor.execute("""SELECT rfid_uid2 FROM mitarbeiter """)
+                cursor.execute("""SELECT rfid_uid1 FROM rfidcards """)
                 inhalt = cursor.fetchall()
 
                 # Alle Zeilen ausgeben
@@ -48,7 +49,7 @@ try:
                 db_rfid_cards.commit()  # Änderungen committen
 
                 print(
-                    f"RFID-Karte mit Card detected:{line1} und UID: {line2} und Zeitstempel: {Zeitstempel} erfolgreich gespeichert.")
+                     f"RFID-Karte mit Card detected:{line1} und UID: {line2} und Zeitstempel: {Zeitstempel} erfolgreich gespeichert.")
 
             except (pymysql.Error, ValueError) as e:
                 print(f"Fehler beim Speichern der RFID-Karte: {e}")
