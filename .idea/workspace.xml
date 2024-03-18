@@ -4,17 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5aef60e2-5957-45a0-963f-eff75f7fa989" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="5aef60e2-5957-45a0-963f-eff75f7fa989" name="Changes" comment="hinzufügen der Kommen und Gehen Option in Datenbank">
+      <change afterPath="$PROJECT_DIR$/GUI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pausen.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SFZ200x200.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/322c94a7-2454-43a1-a165-7ba77792fef7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/322c94a7-2454-43a1-a165-7ba77792fef7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/322c94a7-2454-43a1-a165-7ba77792fef7/storage_v2/_src_/schema/mitarbeiter.pN9VXg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/322c94a7-2454-43a1-a165-7ba77792fef7/storage_v2/_src_/schema/mitarbeiter.pN9VXg.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rfidv2.0.py" beforeDir="false" afterPath="$PROJECT_DIR$/rfidv2.0.py" afterDir="false" />
     </list>
+    <list id="276cdd97-83d5-4e6c-902d-6a0b638d565c" name="Changes by Fabian Zenner" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
     <envs>
@@ -30,6 +39,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -41,13 +53,21 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.GUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PyQT5.executor&quot;: &quot;Run&quot;,
     &quot;Python.RFID.executor&quot;: &quot;Run&quot;,
+    &quot;Python.calender.executor&quot;: &quot;Run&quot;,
+    &quot;Python.csv reader.executor&quot;: &quot;Run&quot;,
+    &quot;Python.import csv.executor&quot;: &quot;Run&quot;,
     &quot;Python.rfidv2.0.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL Inserts&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;SQL Inserts&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mirkm/PycharmProjects/RFID NEU/RFID.py&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mirkm/PycharmProjects/RFIDv2.0&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -59,12 +79,19 @@
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
       &quot;mysql&quot;
+    ],
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
+      &quot;MySQL&quot;
     ]
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mirkm\PycharmProjects\RFIDv2.0" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mirkm\PycharmProjects\RFIDv2.0" />
+      <recent name="C:\Users\mirkm\PycharmProjects\RFIDv2.0\.venv" />
     </key>
   </component>
   <component name="RunManager">
@@ -126,14 +153,53 @@
       <workItem from="1709802341155" duration="5147000" />
       <workItem from="1709815420208" duration="174000" />
       <workItem from="1709816743039" duration="11000" />
+      <workItem from="1709884724388" duration="1195000" />
+      <workItem from="1709889930955" duration="614000" />
+      <workItem from="1709997323362" duration="95000" />
+      <workItem from="1710009948213" duration="926000" />
+      <workItem from="1710010880439" duration="9000" />
+      <workItem from="1710138767931" duration="55000" />
+      <workItem from="1710138872520" duration="112000" />
+      <workItem from="1710140665985" duration="5555000" />
+      <workItem from="1710148066975" duration="6378000" />
+      <workItem from="1710165698957" duration="3101000" />
+      <workItem from="1710185733656" duration="133000" />
+      <workItem from="1710224242094" duration="12618000" />
+      <workItem from="1710239090034" duration="9408000" />
+      <workItem from="1710310203911" duration="18706000" />
+      <workItem from="1710340581108" duration="201000" />
+      <workItem from="1710397500419" duration="22976000" />
+      <workItem from="1710482869039" duration="13814000" />
+      <workItem from="1710500051481" duration="7176000" />
+      <workItem from="1710745045390" duration="9319000" />
+      <workItem from="1710756030379" duration="6915000" />
     </task>
+    <task id="LOCAL-00001" summary="hinzufügen der Kommen und Gehen Option in Datenbank">
+      <option name="closed" value="true" />
+      <created>1709885247526</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709885247526</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="hinzufügen der Kommen und Gehen Option in Datenbank" />
+    <option name="LAST_COMMIT_MESSAGE" value="hinzufügen der Kommen und Gehen Option in Datenbank" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/RFIDv2_0$rfidv2_0.coverage" NAME="rfidv2.0 Coverage Results" MODIFIED="1709815458208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv" />
+    <SUITE FILE_PATH="coverage/RFIDv2_0$test.coverage" NAME="test Coverage Results" MODIFIED="1710756192005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RFIDv2_0$calender.coverage" NAME="calender Coverage Results" MODIFIED="1710485027108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RFIDv2_0$rfidv2_0.coverage" NAME="rfidv2.0 Coverage Results" MODIFIED="1710764703947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RFIDv2_0$PyQT5.coverage" NAME="PyQT5 Coverage Results" MODIFIED="1710010792257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RFIDv2_0$RFID.coverage" NAME="RFID Coverage Results" MODIFIED="1709727867977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../RFID NEU" />
+    <SUITE FILE_PATH="coverage/RFIDv2_0$import_csv.coverage" NAME="import csv Coverage Results" MODIFIED="1710314041882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RFIDv2_0$GUI.coverage" NAME="GUI Coverage Results" MODIFIED="1710764845060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RFIDv2_0$csv_reader.coverage" NAME="csv reader Coverage Results" MODIFIED="1710506245595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
